@@ -1,0 +1,28 @@
+{
+  "name": "side2java",
+  "version": "0.0.1",
+  "description": "Convert .side files (Selenium IDE recordings) into Java code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roesslerj/side2java.git"
+  },
+  "keywords": [
+    "SeleniumIDE",
+    "side",
+    "Java",
+    "capture",
+    "replay",
+    "code",
+    "conversion"
+  ],
+  "author": "Jeremias Roessler",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/roesslerj/side2java/issues"
+  },
+  "homepage": "https://github.com/roesslerj/side2java#readme"
+}
