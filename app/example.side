@@ -1,0 +1,87 @@
+{
+  "id": "17049f7f-6e1f-4d73-93eb-95e112312052",
+  "version": "2.0",
+  "name": "recheck-web-demo",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "a4ca9a81-9fb8-49c9-bae0-4de6cd674c61",
+    "name": "first",
+    "commands": [{
+      "id": "bdd0b5d6-cb15-4843-9204-a0b267902efe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bfc3f34-c264-4978-b250-4c3df2a70828",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-search-form-wrapper",
+      "targets": [
+        ["css=.mw-search-form-wrapper", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52345cd4-1c78-4f95-91e3-5130a987dd59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1421x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6b9bde1-9b4c-4bd3-be7a-7ffc8411cd0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd93ce8-a365-4a35-a031-9d45c0fcceb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Golden Master Testing"
+    }, {
+      "id": "8e11763e-9604-44bb-8cc3-376f6222c79a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pure-button",
+      "targets": [
+        ["css=.pure-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8262fad7-0099-4a1a-a6f9-46a440662775",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a4ca9a81-9fb8-49c9-bae0-4de6cd674c61"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
