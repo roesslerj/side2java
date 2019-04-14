@@ -24,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/roesslerj/side2java/issues"
   },
-  "homepage": "https://github.com/roesslerj/side2java#readme"
+  "homepage": "https://github.com/roesslerj/side2java#readme",
+  "devDependencies": {
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
