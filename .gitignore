@@ -63,3 +63,7 @@ typings/
 # parcel build output
 dist/
 .cache/
+
+# ignore "transpiled" js
+*.js
+*.js.map
