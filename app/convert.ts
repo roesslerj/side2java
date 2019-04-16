@@ -1,7 +1,7 @@
 
 import * as side from '/Users/roessler/Documents/startup/workspace/side2java/app/example.json';
 
-console.log("Suite: " + camelize(side.name));
+console.log("Suite: " + camelize(side.name, true));
 for (var testCount in side.tests) {
   console.log("Test: " + camelize(side.tests[testCount].name));
   for (var commandCount in side.tests[testCount].commands) {
@@ -9,9 +9,12 @@ for (var testCount in side.tests) {
   }
 }
 
-function camelize(name: string) {
-  return name.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word: String) {
-    return word.toUpperCase();
+function camelize(name: string, firstUpperCase: boolean = false) {
+  return name.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word: String, index: number) {
+    if (firstUpperCase) {
+      return word.toUpperCase();
+    }
+    return index == 0 ? word.toLowerCase() : word.toUpperCase();
   }).replace(/[^a-z ]/ig, '');
 }
 
